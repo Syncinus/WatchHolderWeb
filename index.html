@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fullpage.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Watch Holder</title>
+</head>
+<!-- animation libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+    integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="fullpage.js"></script>
+
+<!-- website js -->
+<script src="app.js" defer></script>
+
+<body>
+    <div id="fullpage">
+        <section class="section s1">
+            <h1>The Future of Watch Holding</h1>
+            <div id="s1-tcontainer">
+                <p id="s1-t1">Affordable.</p>
+                <p id="s1-t2">Affective.</p>
+                <p id="s1-t3">Afficient.</p>
+            </div>
+        </section>
+        <section class="section s2">
+            <h1>
+                Dual Suction Cup System
+            </h1>
+            <p>
+                to hold on tight, and
+            </p>
+        </section>
+        <section class="section s3">
+            <h1 class="slideInBottom">
+                Float<sup style="font-size: 1rem;">TM</sup>
+            </h1>
+            <p>
+                to keep your watch safe in any situation
+            </p>
+        </section>
+        <section class="section s4">
+            <h1>
+                Flexible Arms
+            </h1>
+            <p>
+                Fitting any boat, big or small.
+            </p>
+        </section>
+        <section class="section s5">
+            <h1>Pricing</h1>
+            <div class="option" onclick="payOptionClick(0)">
+                <h1>Affordable</h1>
+                <ul>
+                    <li>Watch Holder</li>
+                    <li>Gray or Black</li>
+                </ul>
+                <h2>14.97</h2>
+            </div>
+            <div class="option" onclick="payOptionClick(1)">
+                <h1>Recommended</h1>
+                <ul>
+                    <li>Watch Holder</li>
+                    <li>Any Colour (Subject to availability)</li>
+                </ul>
+                <h2>16.97</h2>
+            </div>
+            <div class="option" onclick="payOptionClick(2)">
+                <h1>Premium</h1>
+                <ul>
+                    <li>Watch Holder</li>
+                    <li>Colour</li>
+                    <li>1 month warranty (Conditions Apply)</li>
+                </ul>
+                <h2>19.97</h2>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

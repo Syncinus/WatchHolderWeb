@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@400;500;600&family=Quicksand:wght@400;700&family=Rajdhani:wght@400;600&display=swap');
+
+:root {
+    --color-orange: rgb(240, 175, 55);
+    --color-blue: rgb(137, 222, 255);
+    --color-background: #626262;
+    --color-font: #f0f0f0;
+    --color-input-background: rgba(151, 151, 151, 0.414);
+    --input-padding: 0.7rem;
+    --color-border: rgba(255, 255, 255, 0.723);
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-font);
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+@keyframes spin-in {
+    0% {
+        transform: rotate(0deg) scale(0%);
+    }
+
+    70% {
+        transform: rotate(540deg) scale(125%);
+    }
+
+    100% {
+        transform: rotate(720deg) scale(100%);
+    }
+}

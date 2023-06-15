@@ -1,0 +1,164 @@
+@import './pages/base.css';
+
+.section {
+    display: flex;
+    align-items: center;
+}
+
+.s1 {
+    background-color: aliceblue;
+    background-image: linear-gradient(to bottom right, rgb(137, 222, 255), rgb(240, 175, 55));
+    font-family: 'Rajdhani', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vmin;
+}
+
+#s1-tcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    align-content: center;
+    min-width: 100%;
+    overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+    .s1 {
+        padding: 2rem;
+    }
+
+    #s1-tcontainer {
+        flex-direction: column;
+    }
+}
+
+.s1 h1 {
+    font-size: 10vmin;
+    display: block;
+    align-self: center;
+    text-align: center;
+}
+
+@keyframes slideInBottom {
+    from {
+        transform: translateY(25%);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+
+.s1 p {
+    display: inline-block;
+    padding: 0vmin;
+    margin: 2vmin;
+    font-size: 8vmin;
+    font-family: 'Quicksand', sans-serif;
+    opacity: 0;
+}
+
+.s1 #s1-t1 {
+    animation: slideInBottom 1s ease-in 0s 1 forwards;
+}
+
+.s1 #s1-t2 {
+    animation: slideInBottom 1s ease-in-out 1s 1 forwards;
+}
+
+.s1 #s1-t3 {
+    animation: slideInBottom 1s ease-in-out 2s 1 forwards;
+}
+
+.s2 {
+    background-color: aqua;
+    background-image: linear-gradient(to top left, rgb(253, 105, 105), rgb(124, 255, 109))
+}
+
+.s3 {
+    background-image: radial-gradient(circle at top right, rgb(70, 212, 54), rgb(131, 222, 255));
+    color: white;
+}
+
+.s3 h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 8rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.s5 {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    background-image: linear-gradient(to top right, #d50d0d, #b40dc7);
+    background-position: cover;
+    color: white;
+    overflow: hidden;
+}
+
+.s5 h1 {
+    font-family: 'Rajdhani';
+    font-size: 8vmin;
+    text-align: center;
+    display: block;
+}
+
+
+
+.s5 .option {
+    display: inline-block;
+    min-height: 40vh;
+    margin: 4vmin;
+    padding: 2vmin;
+    border: 0.1rem solid #ffffff;
+    border-radius: 2vmin;
+    background-color: rgba(163, 163, 163, 0.548);
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    transition-duration: 0.5s;
+}
+
+@media (min-width: 1001px) {
+    .s5 .option {
+        min-width: 25vmax;
+        height: 40vh;
+    }
+}
+
+@media (max-width: 100px) {
+    .s5 .option {
+        min-width: 86vmin;
+        min-height: 40vh;
+    }
+}
+
+.s5 .option:hover {
+    transform: translateY(-1rem);
+    background-color: rgba(255, 255, 255, 0.586);
+    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.13)
+}
+
+.s5 .option h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.s5 .option h2 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    padding: .5rem;
+}
+
+.s5 .option ul {
+    font-family: 'Quicksand', sans-serif;
+}

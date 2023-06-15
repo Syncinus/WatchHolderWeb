@@ -1,0 +1,87 @@
+@import "./base.css";
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-image: radial-gradient(circle at top right, color-mix(in srgb, var(--color-orange), black 30%), color-mix(in srgb, var(--color-blue), black 30%));
+    background-size: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 3rem 0;
+}
+
+h1 {
+    animation: 3s linear 0s spin-in;
+    margin: 4rem;
+    font-family: 'Rajdhani', cursive;
+
+}
+
+.break {
+    margin: 1rem;
+}
+
+@media screen and (min-width: 1001px) {
+    #forms {
+        display: block;
+        max-width: 50%;
+    }
+
+    input,
+    select {
+        display: inline-block;
+    }
+
+    label {
+        display: inline-block;
+    }
+
+    br {
+        display: block;
+        margin: 0.2rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #forms {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+input,
+select {
+    border: .1rem solid var(--color-border);
+    border-radius: 0.5rem;
+    padding: var(--input-padding);
+    background-color: var(--color-input-background);
+    color: var(--color-font);
+    transition-duration: 700ms;
+}
+
+input:valid,
+select:valid {
+    background-color: rgba(200, 255, 207, 0.301);
+}
+
+input:invalid,
+select:invalid {
+    background-color: rgba(255, 194, 194, 0.305);
+}
+
+#submit {
+    width: 100%;
+    height: 3rem;
+    object-fit: contain;
+    margin: 1rem 0rem;
+    background-color: var(--color-input-background);
+    transition-duration: 700ms;
+}
+
+#submit:hover,
+select:hover {
+    background-color: color-mix(in srgb, var(--color-input-background) 60%, white 40%);
+}
