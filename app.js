@@ -10,7 +10,7 @@ new fullpage('#fullpage', {
 
         const fadeIn = section.getElementsByClassName('slideInBottom')
         if (fadeIn.length !== 0)
-            tl.fromTo(fadeIn, 0.7, { y: 25, opacity: 0, }, { y: 0, opacity: 100, })
+            tl.fromTo(fadeIn, 0.7, { y: 25, opacity: 0, }, { y: 0, opacity: 1, })
 
         if (destination.index === 1) {
             document.getElementById('s2-backgroundvid').play()
@@ -18,10 +18,10 @@ new fullpage('#fullpage', {
 
         if (destination.index === 4) {
             let title = section.querySelector('h1')
-            tl.fromTo(title, 0.7, { opacity: 0, y: 25, }, { opacity: 100, y: 0, })
+            tl.fromTo(title, 0.7, { opacity: 0, y: 25, }, { opacity: 1, y: 0, })
 
             let pricingOptions = section.getElementsByClassName('option')
-            tl.fromTo(pricingOptions, 0.5, { opacity: 0, }, { opacity: 100, })
+            tl.fromTo(pricingOptions, 0.5, { opacity: 0, }, { opacity: 1, })
         }
 
     }

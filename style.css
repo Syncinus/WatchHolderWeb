@@ -107,7 +107,7 @@
     text-align: center;
     font-size: 8vmin;
     padding: 1rem;
-    margin: 15vmin;
+    margin-top: 15vmin;
 }
 
 .s2 p {
@@ -126,7 +126,7 @@
     font-size: 8rem;
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
+    overflow: visible;
     text-overflow: ellipsis;
 }
 
