@@ -1,7 +1,7 @@
 
 new fullpage('#fullpage', {
     autoScrolling: true,
-    navigation: true,
+    navigation: window.innerWidth <= 1000 ? false : true,
     navigationPosition: 'right',
     onLeave: (origin, destination, direction) => {
         const section = destination.item
@@ -18,14 +18,21 @@ new fullpage('#fullpage', {
 
         if (destination.index === 4) {
             let title = section.querySelector('h1')
-            tl.fromTo(title, 0.8, { y: 25, opacity: 0, }, { y: 0, opacity: 100, })
+            tl.fromTo(title, 0.7, { opacity: 0, y: 25, }, { opacity: 100, y: 0, })
 
             let pricingOptions = section.getElementsByClassName('option')
-            tl.fromTo(pricingOptions, 1, { opacity: 0, }, { opacity: 100, })
+            tl.fromTo(pricingOptions, 0.5, { opacity: 0, }, { opacity: 100, })
         }
 
     }
 })
+
+// switch payment options to slides on mobile
+if (window.innerWidth <= 1000) {
+    document.querySelectorAll('.option-wrap').forEach((option) => {
+        option.classList.add("slide")
+    })
+}
 
 // payment selection
 function payOptionClick(index) {

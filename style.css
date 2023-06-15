@@ -153,7 +153,6 @@
 
 .s5 .option {
     display: inline-block;
-    min-height: 40vh;
     margin: 4vmin;
     padding: 2vmin;
     border: 0.1rem solid #ffffff;
@@ -166,15 +165,29 @@
 
 @media (min-width: 1001px) {
     .s5 .option {
-        min-width: 25vmax;
+        min-width: 24vw;
+        max-width: 25vw;
         height: 40vh;
+    }
+
+    .s5 .option-wrap {
+        display: inline;
     }
 }
 
-@media (max-width: 100px) {
+@media (max-width: 1000px) {
     .s5 .option {
-        min-width: 86vmin;
-        min-height: 40vh;
+        margin: 5rem 0;
+        height: 60vh;
+        width: 70vw;
+        overflow: hidden;
+    }
+
+    .option-wrap {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
