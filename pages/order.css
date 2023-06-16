@@ -2,7 +2,8 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    background-image: radial-gradient(circle at top right, color-mix(in srgb, var(--color-orange), black 30%), color-mix(in srgb, var(--color-blue), black 30%));
+    background-color: var(--color-background);
+    /* background-image: radial-gradient(circle at top right, color-mix(in srgb, var(--color-orange), black 30%), color-mix(in srgb, var(--color-blue), black 30%)); */
     background-size: cover;
     min-width: 100vw;
     min-height: 100vh;
@@ -14,9 +15,16 @@ body {
 }
 
 h1 {
-    animation: 3s linear 0s spin-in;
+    animation: fade-in 1s ease-in-out 0s 1 forwards;
     margin: 4rem;
     font-family: 'Rajdhani', cursive;
+    font-size: 4rem;
+    background-image: linear-gradient(to bottom right, rgb(137, 222, 255), rgb(240, 175, 55));
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
 
 }
 
@@ -56,6 +64,7 @@ input,
 select {
     border: .1rem solid var(--color-border);
     border-radius: 0.5rem;
+    margin: 0.5rem 0rem;
     padding: var(--input-padding);
     background-color: var(--color-input-background);
     color: var(--color-font);

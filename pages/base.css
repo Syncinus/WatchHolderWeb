@@ -3,15 +3,16 @@
 :root {
     --color-orange: rgb(240, 175, 55);
     --color-blue: rgb(137, 222, 255);
-    --color-background: #626262;
     --color-font: #f0f0f0;
     --color-input-background: rgba(151, 151, 151, 0.414);
     --input-padding: 0.7rem;
     --color-border: rgba(255, 255, 255, 0.723);
+    --color-background: rgb(37, 37, 37);
 }
 
 body {
     background-color: var(--color-background);
+    /* background-image: linear-gradient(to bottom right, rgb(137, 222, 255), rgb(240, 175, 55)); */
     color: var(--color-font);
 }
 
@@ -31,5 +32,17 @@ body {
 
     100% {
         transform: rotate(720deg) scale(100%);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        transform: translateY(25%);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 100%;
     }
 }

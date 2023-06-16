@@ -1,13 +1,37 @@
 @import './pages/base.css';
 
+:root {
+    --color-green: rgb(70, 212, 54);
+    --color-cyan: rgb(131, 222, 255);
+}
+
+/* fullpage nav thing style */
+
+body {
+    background-color: var(--color-background);
+    background-image: none;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background-color: var(--color-font);
+}
+
+
 .section {
     display: flex;
     align-items: center;
 }
 
+p {
+    padding: 0vmin;
+    margin: 2vmin;
+    font-size: 6vmin;
+    font-family: 'Quicksand', sans-serif;
+}
+
 .s1 {
-    background-color: aliceblue;
-    background-image: linear-gradient(to bottom right, rgb(137, 222, 255), rgb(240, 175, 55));
+    /* background-image: linear-gradient(to bottom right, var(--color-blue), var(--color-orange)); */
     font-family: 'Rajdhani', sans-serif;
     display: flex;
     align-items: center;
@@ -35,11 +59,26 @@
     }
 }
 
+.s1 #mainlogo {
+    display: block;
+    height: 25vh;
+    background-image: url(https://placeholder.pics/svg/300);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
 .s1 h1 {
     font-size: 10vmin;
     display: block;
     align-self: center;
     text-align: center;
+    background-image: radial-gradient(circle at bottom left, var(--color-cyan), var(--color-green));
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
 }
 
 @keyframes slideInBottom {
@@ -77,22 +116,25 @@
 
 .s2 {
     background-color: #b40dc7;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .s2 video {
+    height: 100vh;
+    width: 100vw;
     position: absolute;
-    min-width: 100vw;
-    min-height: 100vh;
+    z-index: 0;
     top: 0;
     left: 0;
     object-fit: cover;
-    filter: brightness(0.75) saturate(0.2);
+    filter: brightness(1) saturate(1);
 }
 
 .s2 .content {
     position: absolute;
-    min-width: 100vw;
     min-height: 100vh;
+    min-width: 100vw;
     top: 0;
     left: 0;
     object-fit: cover;
@@ -117,8 +159,14 @@
 
 
 .s3 {
-    background-image: radial-gradient(circle at top right, rgb(70, 212, 54), rgb(131, 222, 255));
+    /* background-image: radial-gradient(circle at top right, rgb(70, 212, 54), rgb(131, 222, 255)); */
+    background-image: url(https://placehold.co/1920x1080.png?text=Placeholder);
+    background-size: cover;
+    overflow: hidden;
     color: white;
+    display: flex;
+    align-items: center;
+
 }
 
 .s3 h1 {
@@ -126,8 +174,12 @@
     font-size: 8rem;
     margin: 0px;
     padding: 0px;
-    overflow: visible;
-    text-overflow: ellipsis;
+    background-image: linear-gradient(to left, var(--color-blue), var(--color-orange));
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
 }
 
 

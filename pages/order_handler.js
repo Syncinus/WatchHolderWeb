@@ -18,6 +18,8 @@ name_display.textContent = name_display.textContent + uname
 price_display.textContent = price_display.textContent + '$' + price
 colour_display.textContent = colour_display.textContent + colour
 
+if (colour.length == 0) colour_display.remove();
+
 // craft email
 const subject = `WATCHORDER EMAIL:${email} COL:${colour}`
 const body = `${uname} has ordered a ${colour} watch holder for $${price}.\n Reply at ${email}`
