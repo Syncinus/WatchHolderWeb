@@ -31,7 +31,10 @@ p {
 }
 
 .s1 {
-    /* background-image: linear-gradient(to bottom right, var(--color-blue), var(--color-orange)); */
+    background-image: url("./media/outline.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80vmin;
     font-family: 'Rajdhani', sans-serif;
     display: flex;
     align-items: center;
@@ -62,7 +65,7 @@ p {
 .s1 #mainlogo {
     display: block;
     height: 25vh;
-    background-image: url(https://placeholder.pics/svg/300);
+    background-image: url(./media/logo.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -128,7 +131,7 @@ p {
     top: 0;
     left: 0;
     object-fit: cover;
-    filter: brightness(1) saturate(1);
+    filter: brightness(.5) saturate(1);
 }
 
 .s2 .content {
@@ -138,23 +141,30 @@ p {
     top: 0;
     left: 0;
     object-fit: cover;
-    display: flex;
-    align-items: center;
     padding: 2rem 1rem;
+    display: flex;
     flex-direction: column;
 }
 
 .s2 h1 {
-    font-family: 'Rajdhani', Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    font-size: 8vmin;
-    padding: 1rem;
-    margin-top: 15vmin;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 15vmin;
+    text-align: right;
+    word-wrap: break-word;
+    max-width: 80vw;
 }
 
 .s2 p {
     font-family: 'Quicksand', sans-serif;
     font-size: 2rem;
+    align-self: flex-end;
+    text-align: left;
+    position: absolute;
+    bottom: 25vmin;
+    left: 5vw;
+    padding: 2vw;
+    max-width: 80vw;
+
 }
 
 
@@ -175,6 +185,7 @@ p {
     margin: 0px;
     padding: 0px;
     background-image: linear-gradient(to left, var(--color-blue), var(--color-orange));
+    background-size: contain;
     -webkit-text-fill-color: transparent;
     color: transparent;
     background-clip: text;
@@ -182,6 +193,34 @@ p {
     -moz-background-clip: text;
 }
 
+.s4 {
+    background-image: url(./media/colour_wire.png);
+    background-position: center;
+    background-size: auto 50vmin;
+    background-repeat: no-repeat;
+}
+
+.s4 h1 {
+    font-family: 'Rajdhani';
+    font-size: 10vmin;
+
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    background-image: linear-gradient(to top right, #d50d0d, #b40dc7);
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+
+.s4 p {
+    font-size: 3rem;
+    position: absolute;
+    bottom: 5vh;
+    right: 5vw;
+}
 
 .s5 {
     display: flex;
