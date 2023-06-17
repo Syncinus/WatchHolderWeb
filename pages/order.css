@@ -3,20 +3,17 @@
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: var(--color-background);
-    /* background-image: radial-gradient(circle at top right, color-mix(in srgb, var(--color-orange), black 30%), color-mix(in srgb, var(--color-blue), black 30%)); */
-    background-size: cover;
     min-width: 100vw;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
-    padding: 3rem 0;
 }
 
 h1 {
     animation: fade-in 1s ease-in-out 0s 1 forwards;
-    margin: 4rem;
+    margin: 2rem;
     font-family: 'Rajdhani', cursive;
     font-size: 4rem;
     background-image: linear-gradient(to bottom right, rgb(137, 222, 255), rgb(240, 175, 55));
@@ -93,4 +90,10 @@ select:invalid {
 #submit:hover,
 select:hover {
     background-color: color-mix(in srgb, var(--color-input-background) 60%, white 40%);
+}
+
+#pricedisplay {
+    font-family: 'Rajdhani';
+    font-size: 2rem;
+    text-align: center;
 }

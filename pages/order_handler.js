@@ -8,10 +8,12 @@ colour_display = document.getElementById('colour')
 // get data from form and append to displays
 const url = new URL(document.location.href)
 
+
 const email = url.searchParams.get("email");
-const uname = url.searchParams.get("fname") + ' ' + url.searchParams.get("lname")
+const uname = url.searchParams.get("name")
 const price = url.searchParams.get("price")
 const colour = url.searchParams.get("colour")
+const address = url.searchParams.get("address")
 
 email_display.textContent = email_display.textContent + email
 name_display.textContent = name_display.textContent + uname

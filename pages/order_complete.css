@@ -1,18 +1,5 @@
 @import "./base.css";
 
-body {
-    font-family: 'Quicksand', sans-serif;
-    background-image: radial-gradient(circle at top right, color-mix(in srgb, var(--color-orange), black 30%), color-mix(in srgb, var(--color-blue), black 30%));
-    background-size: cover;
-    min-width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 2rem 0;
-}
-
 h1 {
     font-family: 'Rajdhani', sans-serif;
 }

@@ -31,7 +31,7 @@
             </div>
         </section>
         <section class="section s2">
-            <video id="s2-backgroundvid" autoplay muted loop src="./media/Promo.webm">
+            <video preload="none" id="s2-backgroundvid" autoplay muted loop src="./media/Promo.webm">
                 <source src="./media/Promo.webm" type="video/mp4">
             </video>
             <div class="content">
@@ -60,36 +60,39 @@
             </p>
         </section>
         <section class="section s5">
-            <h1>Pricing</h1>
+            <h1>Order</h1>
             <div class="option-wrap">
-                <div class="option" onclick="payOptionClick(0)">
-                    <h1>Affordable</h1>
+                <div class="option" onclick="document.location.href =  './pages/order.html'">
+                    <h1>Watch Holder 4</h1>
                     <ul>
-                        <li>Watch Holder</li>
-                        <li>Gray or Black</li>
+                        <li>The newest model of watch holder</li>
+                        <li>Comes in colours</li>
+                        <li>CCC Discount</li>
+                        <li>International shipping</li>
                     </ul>
-                    <h2>$14.97</h2>
+                    <h2>Starts $14.97</h2>
                 </div>
             </div>
             <div class="option-wrap">
-                <div class="option" onclick="payOptionClick(1)">
-                    <h1>Recommended</h1>
+                <div class="option disabled">
+                    <h1>Merchandise</h1>
                     <ul>
-                        <li>Watch Holder</li>
-                        <li>Any Colour (Subject to availability)</li>
+                        <li>Get your watchholder.ca merch!</li>
+                        <li>T shirts, water bottles, and hoodies!</li>
+                        <li>Represent your favorite watch holder brand in style.</li>
                     </ul>
-                    <h2>$16.97</h2>
+                    <h2>Coming Soon</h2>
                 </div>
             </div>
             <div class="option-wrap">
-                <div class="option" onclick="payOptionClick(2)">
-                    <h1>Premium</h1>
+                <div class="option" onclick="">
+                    <h1>Old Models</h1>
                     <ul>
-                        <li>Watch Holder</li>
-                        <li>Colour</li>
-                        <li>1 month warranty <a href="./pages/conditions.html">(Conditions Apply)</a></li>
+                        <li>Old models of the Watch Holder product can sometimes be purchased at a discount</li>
+                        <li>Colour (Subject to availability)</li>
+                        <li>Calgary Canoe Club only</li>
                     </ul>
-                    <h2>$19.97</h2>
+                    <h2>Price varies</h2>
                 </div>
             </div>
         </section>

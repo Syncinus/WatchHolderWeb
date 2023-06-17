@@ -12,30 +12,34 @@
 
 <body>
     <h1>Place Your Order</h1>
-    <form id="forms" action="order_complete.html">
-        <label for="fname">First Name:</label>
-        <input name="fname" type="text" placeholder="John" minlength="1" required="true"> <br>
-        <label for="lname">Last Name:</label>
-        <input name="lname" type="text" placeholder="Doe" minlength="1" required="true"><br>
-
-        <label for="email">Email:</label>
-        <input name="email" inputmode="email" autocomplete="email" type="email" placeholder="johndoe11@email.com"
-            required="true">
-        <br class="break">
-
-        <label id="colourlabel">Colour: </label>
-        <select name="colour" id="colour">
+    <form id="forms" action="./order_complete.html" method="get">
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name" minlength="3" placeholder="Jane Doe" required> <br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" placeholder="janedoe@example.com" required> <br>
+        <label for="phone">Phone: </label>
+        <input type="tel" name="phone" id="phone" placeholder="555-555-5555" minlength="7" required> <br>
+        <input type="checkbox" name="cccmember" id="cccmember" checked>
+        <label for="cccmember">I am a Calgary Canoe Club member</label> <br>
+        <label for="address" id="addresslabel">Mailing Address: </label>
+        <input type="text" name="address" id="address" required> <br>
+        <input type="checkbox" name="canada" id="canada" checked>
+        <label for="canada" id="canadalabel">I live in Canada</label><br class="break">
+        <br>
+        <input type="checkbox" name="colourenabled" id="colourenabled">
+        <label for="colourenabled">Add Colour</label> <br>
+        <label id="colourlabel" for="colour">Colour: </label>
+        <select name="colour" id="colour" required>
             <option value="">Choose a colour...</option>
             <option value="Gray">Gray/Black</option>
             <option value="Blue">Blue</option>
             <option value="Green">Green</option>
             <option value="Orange">Orange</option>
             <option value="Yellow">Yellow</option>
-        </select>
-
-        <input type="hidden" name="price" id="price" value="Price Failed">
-
-        <input id="submit" name="placeorder" type="submit" value="Place Order">
+        </select> <br>
+        <h2 id="pricedisplay"></h2>
+        <input type="hidden" name="price" id="price">
+        <input type="submit" value="Continue" id="submit">
     </form>
 </body>
 

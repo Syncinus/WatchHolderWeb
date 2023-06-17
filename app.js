@@ -35,8 +35,8 @@ if (window.innerWidth <= 1000) {
 }
 
 // payment selection
-function payOptionClick(index) {
-    window.location.href = (`./pages/order.html?index=${index}`)
+function payOptionClick(shipping, colour, price) {
+    window.location.href = (`./pages/order.html?shipping=${shipping}&colour=${colour}&price=${price}`)
 }
 
 // remove watermark (legal)
