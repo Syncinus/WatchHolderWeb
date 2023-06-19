@@ -3,6 +3,8 @@ const PRICE_BASE = 14.97
 const PRICE_COLOUR = 3.00
 const PRICE_CAN_SHIPPING = 3.00
 const PRICE_INT_SHIPPING = 8.00
+const PRICE_WARRANTY = 3.00
+const PRICE_SELF_ASSEMBLY = -5.00
 
 
 const url = new URL(window.location.href);
@@ -70,6 +72,10 @@ cccmember.addEventListener("click", () => {
 const price_display = document.getElementById('pricedisplay')
 let price = PRICE_BASE
 const priceinput = document.getElementById('price')
+const warranty = document.getElementById('warranty')
+warranty.addEventListener('click', updatePrice)
+const selfassembly = document.getElementById('selfassembly')
+selfassembly.addEventListener('click', updatePrice)
 function updatePrice() {
     price = PRICE_BASE
     if (!cccmember.checked) {
@@ -80,8 +86,19 @@ function updatePrice() {
     }
     if (colour_check.checked)
         price += PRICE_COLOUR
+    if (warranty.checked)
+        price += PRICE_WARRANTY
+    if (selfassembly.checked)
+        price += PRICE_SELF_ASSEMBLY
     price_display.innerText = '$' + price
     priceinput.value = price
 }
 updatePrice()
 
+// form submit handler
+forms.addEventListener('submit', (e) => {
+    e.preventDefault()
+    const form = new FormData(e.target)
+    const data = Object.fromEntries(form.entries())
+    document.location.href = (`./order_complete.html?form=${JSON.stringify(data)}`)
+})

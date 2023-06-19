@@ -11,7 +11,27 @@
 <script src="order_handler.js" defer></script>
 
 <body>
-    <h1>This site is undergoing maintenence. Please try again soon!</h1>
+    <h1>Thank you for ordering</h1>
+
+    <div id="details">
+        <h2>Details</h2>
+        <p id="email">Email: </p>
+        <p id="name">Name: </p>
+        <p id="price">Price: </p>
+        <p id="colour">Colour: </p>
+        <p id="address">Adress: </p>
+        <p id="selfassembly">Self Assembly</p>
+
+    </div>
+
+    <button id="showButton" click="finalize">Send</button>
+
+    <dialog id="notifyDialog">
+        <h2>Order Complete</h2>
+        <p>You should have been prompted with an email.</p>
+        <p>If not, make sure your browser is not blocking popups.</p>
+        <button id="hideButton">Okay</button>
+    </dialog>
 </body>
 
 </html>

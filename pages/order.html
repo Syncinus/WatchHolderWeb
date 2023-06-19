@@ -12,7 +12,7 @@
 
 <body>
     <h1>Place Your Order</h1>
-    <form id="forms" action="./order_complete.html" method="get">
+    <form id="forms" method="get">
         <label for="name">Name: </label>
         <input type="text" name="name" id="name" minlength="3" placeholder="Jane Doe" required> <br>
         <label for="email">Email: </label>
@@ -29,6 +29,8 @@
         <input type="checkbox" name="colourenabled" id="colourenabled">
         <label for="colourenabled">Add Colour</label> <br>
         <label id="colourlabel" for="colour">Colour: </label>
+
+        <!-- warranty -->
         <select name="colour" id="colour" required>
             <option value="">Choose a colour...</option>
             <option value="Gray">Gray/Black</option>
@@ -37,6 +39,12 @@
             <option value="Orange">Orange</option>
             <option value="Yellow">Yellow</option>
         </select> <br>
+        <input type="checkbox" name="warranty" id="warranty">
+        <label for="warranty">Include the warranty <a href="./conditions.html">(Conditions Apply)</a></label> <br>
+
+        <input type="checkbox" name="selfassembly" id="selfassembly">
+        <label for="selfassembly">Self Assembly</a></label> <br>
+
         <h2 id="pricedisplay"></h2>
         <input type="hidden" name="price" id="price">
         <input type="submit" value="Continue" id="submit">

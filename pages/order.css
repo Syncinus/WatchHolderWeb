@@ -97,3 +97,7 @@ select:hover {
     font-size: 2rem;
     text-align: center;
 }
+
+a {
+    color: rgb(14, 132, 171);
+}
