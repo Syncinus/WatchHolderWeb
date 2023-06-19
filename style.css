@@ -32,7 +32,7 @@ p {
 }
 
 .s1 {
-    background-image: url("./media/outline.png");
+    background-image: url("./media/outline.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 80vmin;
@@ -196,7 +196,7 @@ p {
 }
 
 .s4 {
-    background-image: url(./media/colour_wire.png);
+    background-image: url(./media/colour_wire.webp);
     background-position: center;
     background-size: auto 50vmin;
     background-repeat: no-repeat;
