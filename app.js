@@ -35,8 +35,12 @@ if (window.innerWidth <= 1000) {
 }
 
 // payment selection
-function payOptionClick(shipping, colour, price) {
-    window.location.href = (`./pages/order.html?shipping=${shipping}&colour=${colour}&price=${price}`)
+function payOptionClick(e) {
+    window.location.href = (`./pages/order.html`)
+}
+
+function oldWatchHolder() {
+    window.open('mailto:watchholderca@gmail.com?subject=Old Watch Holder Purchase Request')
 }
 
 // remove watermark (legal)
