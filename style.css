@@ -21,7 +21,7 @@ body {
 .section {
     display: flex;
     align-items: center;
-    max-height: 100dvh;
+    max-height: 100svh;
 }
 
 p {
@@ -161,10 +161,11 @@ p {
     align-self: flex-end;
     text-align: left;
     position: absolute;
-    bottom: 25vmin;
+    bottom: 20vh;
     left: 5vw;
     padding: 2vw;
     max-width: 80vw;
+    max-height: 100svh;
 
 }
 
