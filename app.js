@@ -43,5 +43,10 @@ function oldWatchHolder() {
     window.open('mailto:watchholderca@gmail.com?subject=Old Watch Holder Purchase Request')
 }
 
+// fix safari video autoplay
+const bgvideo = document.querySelector('video')
+bgvideo.muted = true;
+bgvideo.play()
+
 // remove watermark (legal)
 document.getElementsByClassName('fp-watermark').item(0).remove()
