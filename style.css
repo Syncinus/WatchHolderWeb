@@ -172,8 +172,9 @@ p {
 
 .s3 {
     /* background-image: radial-gradient(circle at top right, rgb(70, 212, 54), rgb(131, 222, 255)); */
-    background-image: url(https://placehold.co/1920x1080.png?text=Placeholder);
+    background-image: url(./media/floating.webp);
     background-size: cover;
+    background-position: bottom;
     overflow: hidden;
     color: white;
     display: flex;
@@ -309,4 +310,29 @@ p {
 
 .s5 .disabled {
     filter: saturate(0.2) brightness(0.8);
+}
+
+.s6 {
+    padding: 2rem;
+}
+
+.s6 h1 {
+    font-size: 15vmin;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    background-image: linear-gradient(to top right, #d50d0d, #b40dc7);
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+
+.s6 p {
+    font-size: 1.5rem;
+    max-width: 50rem;
+}
+
+a {
+    color: var(--link-colour)
 }

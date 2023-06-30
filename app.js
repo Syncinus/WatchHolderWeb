@@ -5,7 +5,7 @@ new fullpage('#fullpage', {
     navigationPosition: 'right',
     onLeave: (origin, destination, direction) => {
         const section = destination.item
-        const tl = new TimelineMax({ delay: 0.7 })
+        const tl = new TimelineMax({ delay: 0.4 })
         console.log(destination.index)
 
         const fadeIn = section.getElementsByClassName('slideInBottom')

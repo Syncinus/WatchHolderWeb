@@ -8,6 +8,7 @@
     --input-padding: 0.7rem;
     --color-border: rgba(255, 255, 255, 0.723);
     --color-background: rgb(37, 37, 37);
+    --link-colour: rgb(14, 132, 171);
 }
 
 body {

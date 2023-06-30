@@ -99,5 +99,5 @@ select:hover {
 }
 
 a {
-    color: rgb(14, 132, 171);
+    color: var(--link-colour)
 }
