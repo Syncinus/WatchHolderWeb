@@ -4,109 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fullpage.min.css">
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="The website to buy watch holders">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="High quality affordable watch holders for all watersports.">
     <meta name="keywords"
         content="watch holder, canada, kayak,shipping, international shipping, watch, canoe, sprint paddling, paddling, kayaking, kayak, watchholder.ca, calgary, calgary canoe, calgary canoe club, holder, warranty, cheap">
     <meta name="theme-color" content="rgb(37, 37, 37)" />
-    <title>Watch Holder</title>
+    <title>Watch Holders</title>
+    <link rel="icon" type="image/x-icon" href="favicon.webp">
 </head>
 <!-- animation libraries -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
     integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
-<script src="fullpage.js" defer></script>
 
 <!-- website js -->
 <script src="app.js" defer></script>
 
 <body>
-    <div id="fullpage">
-        <section class="section s1">
-            <span id="mainlogo"></span>
-            <h1>The Future of Watch Holding</h1>
-            <div id="s1-tcontainer">
-                <p id="s1-t1">Effordable.</p>
-                <p id="s1-t2">Effective.</p>
-                <p id="s1-t3">Efficient.</p>
-            </div>
+    <div id="title">
+        <span id="mainlogo"></span>
+        <h1 class="title">The Future of Watch Holding</h1>
+        <ul>
+            <li class="animated">Effordable.</li>
+            <li class="animated">Effective.</li>
+            <li class="animated">Efficient.</li>
+        </ul>
+        <button class="animated" onclick="scrollToId('learn-more')">Learn More</button>
+
+        <i onclick="scrollToId('order-page-title')" class="animated fa fa-angle-double-down" aria-hidden="true"></i>
+    </div>
+
+    <!-- order -->
+    <h2 class="animated" id="order-page-title">Get Yours!</h2>
+    <div id="order-page">
+        <button class="animated" onclick="document.location.href = 'pages/order.html'">
+            <h2>Watch Holder 4</h2>
+            <p>Order the Watch Holder 4</p>
+            <h2>Starts C$9.97</h2>
+        </button>
+        <button class="animated" disabled>
+            <h2>Buy Merch</h2>
+            <p>T-shirts coming soon!</p>
+        </button>
+    </div>
+
+    <!-- learn more -->
+    <div id="learn-more" style="visibility: hidden;">Learn More Jump Point</div>
+    <div class="section darker">
+        <h2>Why Do I Need One?</h2>
+        <p class="animated">
+            The Watch Holder 4 is used and recommended by real people. Knowing the information
+            provided by a watch is key in improving at any discipline. The watch holder is one of the
+            key training tools of any athlete.
+
+        </p>
+
+    </div>
+    <div class="section">
+        <h2>The Most Affordable</h2>
+        <p class="animated">
+            No money? No problem! The Watch Holder 4 is the most affordable watch holder on the market.
+            Even if the price is too high, there are is a <a href="pages/rent_to_ buy.html">rent-to-buy</a>
+            program available to make sure you has access to the watch holder you need.
+        </p>
+    </div>
+
+    <!-- about us -->
+    <div id="about-us" class="darker">
+        <h1>About Us</h1>
+        <p class="animated">
+            <a href="https://watchholder.ca">watchholder.ca</a> is run by Canadian sprint kayakers Kael Johnston. The
+            watch holders are made with care, and each new model is carefully tested
+            by them to verify their functionality. The company is based in Calgary, AB.
+        </p>
+
         </section>
-        <section class="section s2">
-            <video preload="none" id="s2-backgroundvid" disablePictureInPicture playsinline autoplay muted loop
-                src="./media/Promo.webm">
-                <source src="./media/Promo.webm" type="video/mp4">
-            </video>
-            <div class="content">
-                <h1>
-                    Keep Your Watch In View
-                </h1>
-                <p>
-                    View life-changing data on your watch, in real time.
-                </p>
-            </div>
-        </section>
-        <section class="section s3">
-            <h1 class="slideInBottom">
-                Float<sup style="font-size: 1rem;">TM</sup>
-            </h1>
-            <p>
-                Innovative technology keeping your watch above water.
-            </p>
-        </section>
-        <section class="section s4">
-            <h1>
-                Dynamic Arm Technology
-            </h1>
-            <p>
-                Fitting any boat, any shape.
-            </p>
-        </section>
-        <section class="section s5">
-            <h1>Order</h1>
-            <div class="option-wrap">
-                <div class="option" onclick="payOptionClick()">
-                    <h1>Watch Holder 4</h1>
-                    <ul>
-                        <li>The newest model of watch holder</li>
-                        <li>Comes in colours</li>
-                        <li>CCC Discount</li>
-                        <li>International shipping</li>
-                    </ul>
-                    <h2>Starts $14.97</h2>
-                </div>
-            </div>
-            <div class="option-wrap">
-                <div class="option disabled">
-                    <h1>Merchandise</h1>
-                    <ul>
-                        <li>Get your watchholder.ca merch!</li>
-                        <li>T shirts, and more commming soon!</li>
-                        <li>Represent your favorite watch holder brand in style.</li>
-                    </ul>
-                    <h2>Coming Soon</h2>
-                </div>
-            </div>
-            <div class="option-wrap">
-                <div class="option" onclick="oldWatchHolder()">
-                    <h1>Old Models</h1>
-                    <ul>
-                        <li>Old models of the Watch Holder product can sometimes be purchased at a discount</li>
-                        <li>Colour (Subject to availability)</li>
-                        <li>Calgary Canoe Club only</li>
-                    </ul>
-                    <h2>Price varies</h2>
-                </div>
-            </div>
-        </section>
-        <section class="section s6">
-            <h1>About Us</h1>
-            <p>
-                <a href="https://watchholder.ca">watchholder.ca</a> is run by Canadian sprint kayakers Kael Johnston
-                and Josh Rowe. The watch holders are made with care, and each new model is carefully tested
-                by them to verify their functionality. The company is based in Calgary, AB.
-            </p>
-        </section>
+    </div>
+
+    <div class="footer">
+        <a class="social-link" href="https://www.instagram.com/watchholder.ca/">
+            <i class="fa fa-instagram"></i>
+        </a>
+        <p>Copyright © 2023 WatchHolder.ca or its subsidiaries</p>
     </div>
 </body>
 

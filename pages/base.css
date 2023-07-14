@@ -1,20 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Foldit:wght@400;500;600&family=Quicksand:wght@400;700&family=Rajdhani:wght@400;600&display=swap');
 
 :root {
-    --color-orange: rgb(240, 175, 55);
-    --color-blue: rgb(137, 222, 255);
-    --color-font: #f0f0f0;
+    /* CSS HEX */
+    --ash-gray: #ccdad1ff;
+    --safety-orange: #f17f29ff;
+    --blood-red: #69140eff;
+    --paynes-gray: #555b6eff;
+    --sky-blue: #76bed0ff;
+
+
+    --color-font: var(--ash-gray);
     --color-input-background: rgba(151, 151, 151, 0.414);
     --input-padding: 0.7rem;
-    --color-border: rgba(255, 255, 255, 0.723);
-    --color-background: rgb(37, 37, 37);
-    --link-colour: rgb(14, 132, 171);
+    --color-border: color-mix(in srgb, var(--paynes-gray) 40%, var(--ash-gray));
+    --color-background: var(--paynes-gray);
+    --link-colour: var(--sky-blue);
 }
 
 body {
     background-color: var(--color-background);
     /* background-image: linear-gradient(to bottom right, rgb(137, 222, 255), rgb(240, 175, 55)); */
     color: var(--color-font);
+}
+
+button {
+    color: var(--color-font);
+    background-color: color-mix(in srgb, var(--paynes-gray) 80%, var(--ash-gray));
+}
+
+button:hover:not(:disabled) {
+    background-color: color-mix(in srgb, var(--paynes-gray) 90%, var(--ash-gray));
+}
+
+button:disabled {
+    filter: brightness(0.8);
 }
 
 .hidden {
