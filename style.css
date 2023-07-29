@@ -225,7 +225,7 @@ video {
 }
 
 #order-page-wrap {
-    background-image: url('media/order-backdrop.jpg');
+    background-image: url('media/order-backdrop.webp');
     background-position: bottom;
     background-size: cover;
     margin: 0;
