@@ -1,0 +1,51 @@
+@import 'base.css';
+
+body {
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    max-width: 16rem;
+    overflow: hidden;
+    border: 2px solid var(--color-border);
+    border-radius: 1rem;
+    background-image: linear-gradient(to top right,
+            color-mix(in srgb, var(--color-background) 80%, white),
+            color-mix(in srgb, var(--color-background) 80%, white))
+}
+
+.item img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.item p {
+    margin: 1rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.item button {
+    justify-self: center;
+    align-self: center;
+    margin: 1.5rem;
+    padding: 1rem 4rem;
+    border: 1.5px solid var(--color-border);
+    border-radius: 1rem;
+    transition-duration: 300ms;
+}
+
+.item button:hover {
+    color: var(--color-background);
+    background-color: var(--color-border);
+}

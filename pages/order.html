@@ -13,6 +13,11 @@
 <body>
     <h1>Place Your Order</h1>
     <form id="forms" method="get">
+        <select name="model" id="model" required>
+            <option value="wh5">Watch Holder 5</option>
+            <option value="wh4">Watch Holder 4</option>
+        </select> <br>
+
         <label for="name">Name: </label>
         <input type="text" name="name" id="name" minlength="3" placeholder="Jane Doe" required> <br>
         <label for="email">Email: </label>
@@ -41,9 +46,6 @@
         </select> <br>
         <input type="checkbox" name="warranty" id="warranty">
         <label for="warranty">Include the warranty <a href="./conditions.html">(Conditions Apply)</a></label> <br>
-
-        <input type="checkbox" name="selfassembly" id="selfassembly">
-        <label for="selfassembly">Self Assembly</a></label> <br>
 
         <h2 id="pricedisplay"></h2>
         <input type="hidden" name="price" id="price">

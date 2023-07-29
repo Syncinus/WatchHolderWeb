@@ -1,5 +1,8 @@
 // price params
-const PRICE_BASE = 14.97
+const PRICE_MODEL_4 = 14.97
+const PRICE_MODEL_5 = 19.97
+
+const PRICE_BASE = PRICE_MODEL_5
 const PRICE_COLOUR = 3.00
 const PRICE_CAN_SHIPPING = 3.00
 const PRICE_INT_SHIPPING = 8.00
@@ -71,13 +74,18 @@ cccmember.addEventListener("click", () => {
 // update price display
 const price_display = document.getElementById('pricedisplay')
 let price = PRICE_BASE
+const modelinput = document.getElementById('model')
 const priceinput = document.getElementById('price')
 const warranty = document.getElementById('warranty')
 warranty.addEventListener('click', updatePrice)
-const selfassembly = document.getElementById('selfassembly')
-selfassembly.addEventListener('click', updatePrice)
+modelinput.addEventListener('click', updatePrice)
 function updatePrice() {
     price = PRICE_BASE
+    if (modelinput.value == 'wh5')
+        price = PRICE_MODEL_5
+    if (modelinput.value == 'wh4')
+        price = PRICE_MODEL_4
+
     if (!cccmember.checked) {
         if (iscanadian.checked)
             price += PRICE_CAN_SHIPPING
@@ -88,8 +96,6 @@ function updatePrice() {
         price += PRICE_COLOUR
     if (warranty.checked)
         price += PRICE_WARRANTY
-    if (selfassembly.checked)
-        price += PRICE_SELF_ASSEMBLY
     price_display.innerText = '$' + price
     priceinput.value = price
 }
