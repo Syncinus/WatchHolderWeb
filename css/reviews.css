@@ -49,6 +49,7 @@
 .review p {
     display: inline;
     padding: 1rem;
+    font-size: 0.9rem;
     padding-bottom: .2rem;
     margin: 0;
 }
@@ -78,6 +79,11 @@
     position: relative;
     float: left;
     display: inline;
+    transition-duration: 500ms;
+}
+
+#leave-review p:hover {
+    background-color: rgb(71, 71, 71);
 }
 
 #leave-review i {
