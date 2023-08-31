@@ -1,6 +1,36 @@
 @import './pages/base.css';
 @import 'header.css';
 
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#notify-banuk {
+    position: fixed;
+    opacity: 0;
+    width: 100%;
+    top: 0;
+    background-color: rgba(196, 40, 40, 0.473);
+    backdrop-filter: blur(1.5rem);
+    -webkit-backdrop-filter: blur(1.5rem);
+    animation: fade-in 1s ease-in forwards
+}
+
+#notify-banuk p {
+    text-align: center;
+    padding: 2rem;
+}
+
+#notify-banuk button {
+    padding: .5rem;
+}
+
 html {
     max-width: 100vw;
     overflow-x: hidden;
