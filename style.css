@@ -16,15 +16,19 @@
     opacity: 0;
     width: 100%;
     top: 0;
+    padding: 2rem 0;
     background-color: rgba(196, 40, 40, 0.473);
     backdrop-filter: blur(1.5rem);
     -webkit-backdrop-filter: blur(1.5rem);
-    animation: fade-in 1s ease-in forwards
+    animation: fade-in 1s ease-in forwards;
+    z-index: 1;
 }
 
 #notify-banuk p {
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 0;
+    max-width: 80%;
+    margin: 0;
 }
 
 #notify-banuk button {
@@ -143,6 +147,10 @@ button:disabled {
     #title ul {
         flex-direction: column;
     }
+
+    #title img {
+        height: 15vh;
+    }
 }
 
 #title ul li {
@@ -222,7 +230,9 @@ video {
 }
 
 @media screen and (max-width: 1000px) {
-    .section img {
+
+    .section img,
+    video {
         width: 90%;
         display: block;
         margin: 1rem;
