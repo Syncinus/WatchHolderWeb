@@ -1,0 +1,4 @@
+index.html
+/pages/home.html
+/pages/order.html
+/pages/conditions.html
