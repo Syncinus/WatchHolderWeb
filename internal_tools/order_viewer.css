@@ -1,0 +1,48 @@
+@import url(/pages/css/default.css);
+
+body {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#authenticator {
+
+    position: fixed;
+    margin: 2rem;
+    background-color: var(--colour-sticky-header);
+    padding: 3rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+
+    & p {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 1.5rem;
+    }
+
+    & input,
+    select {
+        margin: .5rem;
+        background-color: var(--colour-sticky-header);
+        padding: .8rem;
+        border-radius: 100vh;
+        border: 1px solid var(--colour-accent);
+        color: var(--colour-text);
+        overflow: hidden;
+        width: 85%;
+
+        &::placeholder {
+            color: var(--colour-text-unfocused);
+        }
+    }
+}
+
+#content {
+    visibility: hidden;
+}

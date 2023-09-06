@@ -1,0 +1,61 @@
+@import '/pages/css/default.css';
+
+body {
+    margin: auto;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Rajdhani', 'Montserrat', 'Merriweather Sans', Helvetica, sans-serif;
+    font-size: 2.5rem;
+    color: var(--colour-accent);
+}
+
+#order-templates {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width: 1000px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .template {
+        background-color: var(--colour-sticky-header);
+        padding: 2rem;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+
+        & button {
+            width: 100%;
+        }
+
+        & h1 {
+            font-family: 'Merriweather Sans', 'Montserrat', sans-serif;
+            color: var(--colour-text);
+        }
+
+        & p {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.hidden {
+    visibility: hidden;
+    display: none;
+}

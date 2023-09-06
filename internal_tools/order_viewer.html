@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Viewer</title>
+    <link rel="stylesheet" href="/internal_tools/order_viewer.css">
+    <script src="/internal_tools/order_viewer.js" defer></script>
+</head>
+
+<body>
+    <div id="authenticator">
+        <p>Please enter the password</p>
+        <input id="password" name="password" type="password" placeholder="Enter Password">
+        <button onclick="authenticate(document.getElementById('password').value)">Continue</button>
+    </div>
+    <div id="content">
+        <h1>Orders</h1>
+    </div>
+</body>
+
+</html>

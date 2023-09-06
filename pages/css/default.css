@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans&family=Rajdhani&family=Montserrat&display=swap');
+
+:root {
+    --ash-gray: #ccdad1ff;
+    --safety-orange: #f17f29ff;
+    --blood-red: #69140eff;
+    --paynes-gray: #555b6eff;
+    --sky-blue: #76bed0ff;
+
+    --colour-bg: rgb(21, 21, 21);
+    --colour-sticky-header: rgb(33, 33, 33);
+    --colour-accent: var(--safety-orange);
+    --colour-accent-hover: color-mix(in srgb, var(--colour-accent) 60%, black);
+    --colour-text: rgb(243, 243, 243);
+    --colour-text-unfocused: rgb(167, 167, 167);
+}
+
+body {
+    background-color: var(--colour-bg);
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather Sans';
+    color: var(--colour-text);
+}
+
+div {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    background-color: var(--colour-accent);
+    border: none;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    color: white;
+    transition-duration: 300ms;
+    border-radius: 100vmax;
+
+    &:hover {
+        background-color: var(--colour-accent-hover);
+    }
+}
+
+a {
+    color: var(--sky-blue);
+    text-decoration: none;
+    transition-duration: 300ms;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+        border-bottom: 1px solid var(--sky-blue);
+    }
+
+}

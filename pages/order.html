@@ -5,52 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order</title>
-    <link rel="stylesheet" href="./order.css">
+    <link rel="stylesheet" href="/pages/css/order.css">
 </head>
 
-<script src="./order.js" defer></script>
+<script src="/pages/js/order.js" defer></script>
 
 <body>
-    <h1>Place Your Order</h1>
-    <form id="forms" method="get">
-        <select name="model" id="model" required>
-            <option value="wh5">Watch Holder 5</option>
-            <option value="wh4">Watch Holder 4</option>
-        </select> <br>
+    <h1>E-Mail Your Order</h1>
+    <p>
+        To order a product, fill out a template and email it to <a
+            href="mailto:watchholderca@gmail.com?subject=Product Order">watchholderca@gmail.com</a> <br>
+        We will get back to you with a quote and ship your order as soon as possible.
+    </p>
 
-        <label for="name">Name: </label>
-        <input type="text" name="name" id="name" minlength="3" placeholder="Jane Doe" required> <br>
-        <label for="email">Email: </label>
-        <input type="email" name="email" id="email" placeholder="janedoe@example.com" required> <br>
-        <label for="phone">Phone: </label>
-        <input type="tel" name="phone" id="phone" placeholder="555-555-5555" minlength="10" required> <br>
-        <input type="checkbox" name="cccmember" id="cccmember" checked>
-        <label for="cccmember">I am a Calgary Canoe Club member</label> <br>
-        <label for="address" id="addresslabel">Mailing Address: </label>
-        <input type="text" name="address" id="address" required> <br>
-        <input type="checkbox" name="canada" id="canada" checked>
-        <label for="canada" id="canadalabel">I live in Canada</label><br class="break">
-        <br>
-        <input type="checkbox" name="colourenabled" id="colourenabled">
-        <label for="colourenabled">Add Colour</label> <br>
-        <label id="colourlabel" for="colour">Colour: </label>
+    <div id="order-templates">
+        <div class="template">
+            <h1>Watch Holder 5 - ~C$20</h1>
+            <p>
+                Watch Holder 5 <br>
+                Name: <br>
+                Email: <br>
+                Phone (Optional): <br>
+                Address/CCC Delivery: <br>
+                Colour ($3): <br>
+            </p>
 
-        <!-- warranty -->
-        <select name="colour" id="colour" required>
-            <option value="">Choose a colour...</option>
-            <option value="Gray">Gray/Black</option>
-            <option value="Blue">Blue</option>
-            <option value="Green">Green</option>
-            <option value="Orange">Orange</option>
-            <option value="Yellow">Yellow</option>
-        </select> <br>
-        <input type="checkbox" name="warranty" id="warranty">
-        <label for="warranty">Include the warranty <a href="./conditions.html">(Conditions Apply)</a></label> <br>
+            <button onclick="copyTemplate(this)">Copy</button>
+        </div>
+        <div class="template">
+            <h1>Watch Holder 4 - ~C$15</h1>
+            <p>
+                Watch Holder 4 <br>
+                Name: <br>
+                Email: <br>
+                Phone (Optional): <br>
+                Address/CCC Delivery: <br>
+                Colour ($3): <br>
+            </p>
 
-        <h2 id="pricedisplay"></h2>
-        <input type="hidden" name="price" id="price">
-        <input type="submit" value="Continue" id="submit">
-    </form>
+            <button onclick="copyTemplate(this)">Copy</button>
+        </div>
+        <div class="template">
+            <h1>T-Shirt - ~C$20</h1>
+            <p>
+                watchholder.ca T-Shirt <br>
+                Name: <br>
+                Email: <br>
+                Phone (Optional): <br>
+                Address/CCC Delivery: <br>
+                Size: <br>
+                Black/White: <br>
+            </p>
+
+            <button onclick="copyTemplate(this)">Copy</button>
+        </div>
+    </div>
+
+    <h2>Thanks for doing business with us!</h2>
+
 </body>
 
 </html>
