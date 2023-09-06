@@ -21,6 +21,10 @@ body {
     padding: 0;
     font-family: 'Merriweather Sans';
     color: var(--colour-text);
+    -webkit-user-select:none;
+    -moz-user-select:-moz-none;
+    -ms-user-select:none;
+    user-select:none;
 }
 
 div {
